@@ -216,6 +216,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
+    'thirdeye',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",

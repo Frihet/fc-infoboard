@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{% static "thirdeye/js/thirdeye.js" %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#thirdeye').thirdeye({ 'urls' : {{ urls|safe }}, 'duration' : {{ duration }} });
+        });
+    </script>
+{% endblock %}
+
+{% block body %}
+    <div id="thirdeye"></div>
+{% endblock %}
