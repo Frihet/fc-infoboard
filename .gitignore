@@ -1,0 +1,8 @@
+deps
+.*sw*
+*.log
+*.pot
+*.pyc
+dev.db
+deploy
+local_settings.py
